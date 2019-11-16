@@ -35,4 +35,7 @@ body
         padding: 3.95em 3em  !important;
     }
 }
-
+span.first-name {
+    font-weight: 600;
+    color: #eceff1;
+}
