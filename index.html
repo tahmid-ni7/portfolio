@@ -61,8 +61,8 @@
                   <i class="fas fa-graduation-cap fa-2x d-block"></i>
                   <span class="d-none d-sm-block">Education</span>
                 </div>
-                <div class="port-item p-4 orange darken-4" data-toggle="collapse" data-target="#skills">
-                  <i class="fas fa-cog fa-2x d-block"></i>
+                <div class="port-item p-4 info-color-dark" data-toggle="collapse" data-target="#skills">
+                  <i class="fab fa-whmcs fa-2x d-block"></i>
                   <span class="d-none d-sm-block">Skills</span>
                 </div>
                 <div class="port-item p-4  indigo darken-4" data-toggle="collapse" data-target="#projects">
@@ -89,7 +89,7 @@
         Engineering focused on Software Engineering from the <b>International University of Business Agriculture and Technology</b>.</p>
       </div>
       <div class="card card-body py-5">
-        <h3>My Skills</h3>
+        <h3>Professional Expertise</h3>
         <p>My professional expertise and interest is working with these technology. Till now I am not considering myself as an expert but I hope, I will be.</p>
         <hr>
         <h4>PHP</h4>
@@ -164,7 +164,62 @@
          Duration : 06 months
         </div>
       </div>
-     
+    </div>
+
+    <!-- skills -->
+    <div id="skills" class="collapse">
+      <div class="py-5 card card-body info-color-dark text-white">
+        <h2>My Skills</h2>
+        <p>As a full-stack web developer, I have deep skill in verious programming languages and other web technologies.</p>
+      </div>
+      <div class="card-deck">
+        <div class="card">
+          <div class="card-header">
+            <h4>Programming languages</h4>
+          </div>
+          <div class="card-body">
+            <li>Programming C</li>
+            <li>C++</li>
+            <li>Java</li>
+            <li>PHP</li>
+            <li>SQL</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h4>Frameworks</h4>
+          </div>
+          <div class="card-body">
+            <li>Laravel</li>
+            <li>CodeIgniter</li>
+            <li>Bootstrap</li>
+          </div>
+        </div>
+      </div>
+      <div class="card-deck">
+        <div class="card">
+          <div class="card-header">
+            <h4>Database</h4>
+          </div>
+          <div class="card-body">
+            <li>MySQL</li>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h4>Applications / Tools</h4>
+          </div>
+          <div class="card-body">
+            <li>Microsoft (Word, Excel, PowerPoint)</li>
+            <li>Adobe Photoshop</li>
+            <li>Github</li>
+            <li>draw.io</li>
+          </div>
+        </div>
+      </div>
     </div>
     <footer class="p-4 stylish-color">
       <div class="row no-gutters">
@@ -172,7 +227,7 @@
           <a href="https://www.dropbox.com/s/cbnkv54axv26jor/CV%20of%20Thamid%20Nishat%20%201.0.5.pdf?dl=0" target="_blank" class="btn purple-gradient"><i class="fab fa-dropbox"></i> Download Resume</a>
         </div>
         <div class="col-lg-6">
-          <p class="text-white mt-3">Copyright &copy; tahmid-ni7 - 2019</p>
+          <p class="text-white mt-3">Copyright &copy; tahmid-ni7 - <span id ="year"></span></p>
         </div>
       </div>
     </footer>
@@ -193,6 +248,7 @@
   <script type="text/javascript" src="js/script.js"></script>
 
   <script>
+  $('#year').text(new Date().getFullYear());  
     //For hiding collapse
   $('.port-item').click(function(){
     $('.collapse').collapse('hide');
