@@ -8,7 +8,8 @@ body
 {
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
-    color: #333333;
+    color: #333;
+    line-height: 1.8; 
 }
 #main-header img{
     height: 100%;
